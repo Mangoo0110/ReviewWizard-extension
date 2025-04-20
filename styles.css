@@ -1,0 +1,22 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 10px;
+  width: 220px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 16px;
+}
+
+p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.review-text-content span {
+  padding: 5px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-top: 5px;
+}

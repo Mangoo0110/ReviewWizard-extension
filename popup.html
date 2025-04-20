@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Amazon Review Classifier</title>
+    <style>
+      body {
+        width: 200px;
+        font-family: Arial, sans-serif;
+      }
+      #loading {
+        display: none;
+        color: gray;
+      }
+      .count {
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Review Classification</h3>
+    <div id="loading">Loading...</div>
+    <div id="counts">
+      <div class="count">Positive: <span id="positive-count">0</span></div>
+      <div class="count">Negative: <span id="negative-count">0</span></div>
+      <div class="count">Requirement: <span id="requirement-count">0</span></div>
+      <div class="count">Neutral: <span id="neutral-count">0</span></div>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

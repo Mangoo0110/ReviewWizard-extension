@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Amazon Review Classifier",
+  "version": "1.0",
+  "description": "Classifies Amazon reviews using Chrome AI",
+  "permissions": ["storage", "tabs", "scripting"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": [
+    "https://www.amazon.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.amazon.com/*"],
+      "js": ["content.js", "popup.js"]
+    }
+  ]
+}
